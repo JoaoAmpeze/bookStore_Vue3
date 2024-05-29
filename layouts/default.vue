@@ -17,10 +17,10 @@
         <v-divider></v-divider>
 
         <v-list density="compact" nav>
-          <v-list-item prepend-icon="mdi-home" to="/" title="Home" value="starred"></v-list-item>
-          <v-list-item to="variaveis" prepend-icon="mdi-google" title="Variavei" value="myfiles"></v-list-item>
-          <v-list-item prepend-icon="mdi-account-multiple" title="Shared with me" value="shared"></v-list-item>
-          <v-list-item prepend-icon="mdi-star" title="Starred" value="starred"></v-list-item>
+          <v-list-item prepend-icon="mdi-home" to="/" title="Home" value="a"></v-list-item>
+          <v-list-item prepend-icon="mdi-book-alphabet" to="/admcrudcategories" title="categories" value="b"></v-list-item>
+          <v-list-item prepend-icon="mdi-book-account-outline" to="/admcrudauthor" title="author" value="c"></v-list-item>
+          <v-list-item prepend-icon="mdi-bookshelf" to="/admcrudbooks" title="livros" value="d"></v-list-item>
         </v-list>
       </v-navigation-drawer>
       <v-main style="height: 100vh; background-color: black;" theme="dark">
