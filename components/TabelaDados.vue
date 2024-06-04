@@ -2,7 +2,7 @@
   <body style="background-color: rgb(155, 155, 155);">
     <v-row>
       <v-col cols="11">
-        <h1 style="color: white">
+        <h1  class="ml-4 mt-3" style="color: white">
           {{ titulo }}
         </h1>
       </v-col>
@@ -10,6 +10,7 @@
         <v-tooltip color="green" text="Clique para adicionar um registro">
           <template v-slot:activator="{ props }">
             <v-btn
+              class="mt-3"
               fab
               v-bind="props"
               small

@@ -17,11 +17,11 @@
         <v-divider></v-divider>
 
         <v-list density="compact" nav>
-          <v-list-item prepend-icon="mdi-home" to="/" title="Home" value="a"></v-list-item>
-          <v-list-item prepend-icon="mdi-bookmark-multiple-outline" to="/admcrudcategories" title="categories" value="b"></v-list-item>
-          <v-list-item prepend-icon="mdi-account-plus-outline" to="/admcrudauthor" title="author" value="c"></v-list-item>
-          <v-list-item prepend-icon="mdi-book-open-page-variant-outline" to="/admcrudbooks" title="livros" value="d"></v-list-item>
-          <v-list-item prepend-icon="mdi-brightness-percent" to="/admcrudcupoms" title="Cupoms" value="e"></v-list-item>
+          <v-list-item prepend-icon="mdi-home" to="/admin/" title="Home" value="a"></v-list-item>
+          <v-list-item prepend-icon="mdi-bookmark-multiple-outline" to="/admin/categories" title="categories" value="b"></v-list-item>
+          <v-list-item prepend-icon="mdi-account-plus-outline" to="/admin/author" title="author" value="c"></v-list-item>
+          <v-list-item prepend-icon="mdi-book-open-page-variant-outline" to="/admin/books" title="livros" value="d"></v-list-item>
+          <v-list-item prepend-icon="mdi-brightness-percent" to="/admin/cupoms" title="Cupoms" value="e"></v-list-item>
         </v-list>
       </v-navigation-drawer>
       <v-main style="height: 100vh; background-color: #000000;" theme="dark">
