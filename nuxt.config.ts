@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 const temaCustomizado = {
-  dark: true,
+  dark: false,
   colors: {
     background: '#660000',
     surface: '#FFFFFF',
@@ -19,7 +19,7 @@ const temaCustomizado = {
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ["vuetify-nuxt-module", '@nuxt/eslint'],
-  plugins: ['~/plugins/axios.js'],
+  plugins: ['~/plugins/axios.js', '~/plugins/toastify.ts'],
   vuetify: {
     /* vuetify options */
     vuetifyOptions: {

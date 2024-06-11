@@ -1,5 +1,5 @@
 <template>
-  <body style="background-color: rgb(155, 155, 155);">
+  <body style="background-color: #005859;">
     <v-row>
       <v-col cols="11">
         <h1  class="ml-4 mt-3" style="color: white">
@@ -8,7 +8,7 @@
       </v-col>
       <v-col>
         <v-tooltip color="green" text="Clique para adicionar um registro">
-          <template v-slot:activator="{ props }">
+          <template class="text-white" v-slot:activator="{ props }">
             <v-btn
               class="mt-3"
               fab
@@ -30,6 +30,7 @@
           :headers="headers"
           theme="light"
           :items="items"
+          class="bg-teal-lighten-1"
         >
           <template v-slot:no-data>
             <span> Nenhum dado Encontrado </span>
@@ -53,14 +54,14 @@
             }}
           </span>
         </template> -->
-          <template v-slot:item.price="{ item }">
+          <!-- <template v-slot:item.price="{ item }">
             <span
               :style="item.price >= 20 ? 'color:red;' : 'color: green;'"
               >{{ item.price }}</span
             >
-          </template>
+          </template> -->
           <template v-slot:item.actions="{ item }">
-            <v-icon class="me-2" size="small" @click="editItem(item)">
+            <v-icon class=" text-green me-2" size="small" @click="editItem(item)">
               mdi-pencil
             </v-icon>
             <v-icon size="small" color="error" @click="deleteItem(item)">
@@ -75,11 +76,12 @@
 
 <style>
 .v-table tbody tr:nth-child(even) {
-  background-color: rgb(255, 255, 255);
+  background-color: #B2DFDB;
+  color: black;
 }
 
 .v-table tbody tr:nth-child(odd) {
-  background-color: rgb(182, 181, 181);
+  background-color:  #007a7c;
 }
 </style>
 

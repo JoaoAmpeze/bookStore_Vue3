@@ -1,16 +1,22 @@
-<template>
-  <body style="background-color: white; height: 100dvh;">
-    <v-row class="mt-3">
-      <CarouselBanner></CarouselBanner>
-    </v-row>
-    <v-row style="background-color: red; color: black;" class="mt-5">
+<script setup lang="ts">
+import SlideCategories from '~/components/slideCategories.vue';
+</script>
+
+<template> 
+  <v-app class="bg-teal-lighten-4">
+    <v-row class="mt-n1">
       <v-col>
-        <h1>Mais Vendidos</h1>
-        <CustomNavigation></CustomNavigation>
+        <CarouselBanner></CarouselBanner>
       </v-col>
-      <v-col>
-        
-      </v-col>
-    </v-row>
-  </body>
+      </v-row>
+      <v-row >
+        <slideBooks></slideBooks>
+      </v-row>
+      <v-row >
+        <SlideCategories></SlideCategories>
+      </v-row>
+      <v-row >
+        <SlideAuthor></SlideAuthor>
+      </v-row>
+    </v-app>
 </template>
