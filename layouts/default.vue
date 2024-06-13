@@ -41,7 +41,7 @@
           prepend-icon="mdi-heart-outline">
           Minha lista
         </v-btn>
-        <v-btn size="large" class="ml-1 font-weight-bold" style="background-color: #007a7c" variant="text"
+        <v-btn to="/login" size="large" class="ml-1 font-weight-bold" style="background-color: #007a7c" variant="text"
           prepend-icon="mdi-account-outline">
           Olá, ...
         </v-btn>
